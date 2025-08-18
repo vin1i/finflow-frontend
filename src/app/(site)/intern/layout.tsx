@@ -1,11 +1,12 @@
 "use client"
 
 import type { ReactNode } from "react"
-import Sidebar from "./sidebar"
-import TopNav from "./top-nav"
 import { useTheme } from "next-themes"
 import { useEffect, useState } from "react"
 import ProtectedRoute from "@/app/components/ProtectedRoute"
+import { Toaster } from "@/components/ui/sonner"
+import Sidebar from "./dashboard/sidebar"
+import TopNav from "./dashboard/top-nav"
 
 interface LayoutProps {
   children: ReactNode
@@ -33,6 +34,7 @@ export default function Layout({ children }: LayoutProps) {
           </header>
           <main className="flex-1 overflow-auto p-6 bg-white dark:bg-[#0F0F12]">
             {children}
+            <Toaster/>
           </main>
         </div>
       </div>

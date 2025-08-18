@@ -100,7 +100,7 @@ export default function Sidebar() {
                   Overview
                 </div>
                 <div className="space-y-1">
-                  <NavItem href="#" icon={Home}>
+                  <NavItem href="/intern/dashboard" icon={Home}>
                     Dashboard
                   </NavItem>
                   <NavItem href="#" icon={BarChart2}>
@@ -120,14 +120,14 @@ export default function Sidebar() {
                   Finance
                 </div>
                 <div className="space-y-1">
-                  <NavItem href="#" icon={Wallet}>
-                    Transactions
+                  <NavItem href="/intern/transactions" icon={Wallet}>
+                    Transações
                   </NavItem>
-                  <NavItem href="#" icon={Receipt}>
-                    Invoices
+                  <NavItem href="/intern/accounts" icon={Receipt}>
+                    Contas Bancárias
                   </NavItem>
                   <NavItem href="#" icon={CreditCard}>
-                    Payments
+                    Categorias
                   </NavItem>
                 </div>
               </div>
